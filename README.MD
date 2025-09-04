@@ -1,4 +1,4 @@
-# Entrega Parcial 1: Modelagem, Estrutura e Migrações
+# Entrega Parcial 2: Funcionalidades CRUD, Autenticação e Testes
 # Sistema de Atendimento - Clínica Odontológica
 
 ## Modelagem de Dados

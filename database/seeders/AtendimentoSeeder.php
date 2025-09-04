@@ -2,27 +2,28 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use App\Models\Atendimento;
+use App\Models\Paciente;
+use App\Models\Dentista;
 
 class AtendimentoSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run(): void
     {
-        DB::table('atendimentos')->insert([
-            [
-                'paciente_id' => 1,
-                'dentista_id' => 1,
-                'data_atendimento' => now()->addDays(2),
-                'descricao' => 'Consulta inicial para avaliação ortodôntica',
-                'status' => 'Agendado'
-            ],
-        ]);
+        $pacientes = Paciente::all();
+        $dentistas = Dentista::all();
+
+        foreach ($pacientes as $paciente) {
+            foreach ($dentistas as $dentista) {
+                Atendimento::create([
+                    'paciente_id' => $paciente->id,
+                    'dentista_id' => $dentista->id,
+                    'data_atendimento' => now()->addDays(rand(1, 30)),
+                    'descricao' => 'Consulta de rotina',
+                    'status' => 'Agendado'
+                ]);
+            }
+        }
     }
 }

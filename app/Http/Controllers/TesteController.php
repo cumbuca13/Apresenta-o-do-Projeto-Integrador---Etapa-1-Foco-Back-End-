@@ -8,7 +8,7 @@ class TesteController extends Controller
 {
     public function index()
     {
-        return ['mensagem' => 'Hello World da Clínica Odontológica'];
+        return ['mensagem' => 'Hello World da Clinica Odontologica'];
     }
-
+    
 }
