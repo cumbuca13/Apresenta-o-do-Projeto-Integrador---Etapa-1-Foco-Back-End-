@@ -9,7 +9,12 @@ class Dentista extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nome', 'especialidade', 'telefone', 'email'];
+    protected $fillable = [
+        'nome',
+        'especialidade',
+        'telefone',
+        'email'
+    ];
 
     public function atendimentos()
     {
