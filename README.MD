@@ -1,6 +1,8 @@
 # Sistema de Atendimento - Clínica Odontológica
 
-## 📌 Entrega Parcial 2: CRUD, Autenticação e Testes
+## 📌 Apresentação do Projeto Integrador - Etapa 1 (Foco Back-End) 
+
+## 📌 Linkdo Vídeo de apresentação: https://youtu.be/MfnLnJlE7F0
 
 Este projeto é um sistema de gestão de clínica odontológica desenvolvido em **Laravel 10**, utilizando **Eloquent ORM**, autenticação com **Laravel Breeze/Sanctum** e testes automatizados.
 
